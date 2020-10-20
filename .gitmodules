@@ -1,0 +1,6 @@
+[submodule "firefox-bin"]
+	path = firefox-bin
+	url = https://aur.archlinux.org/firefox-bin.git
+[submodule "bin32-firefox"]
+	path = bin32-firefox
+	url = https://aur.archlinux.org/bin32-firefox.git
