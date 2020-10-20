@@ -3,7 +3,7 @@
 mkdir /tmp/nightly-build
 cp ~/aur/makepkgs/firefox-nightly/PKGBUILD /tmp/nightly-build/PKGBUILD
 cp ~/aur/makepkgs/firefox-nightly/policies.json /tmp/nightly-build/policies.json
-cp ~//makepkgs/firefox-nightly/firefox-nightly.desktop /tmp/nightly-build/firefox-nightly.desktop
+cp ~/aur/makepkgs/firefox-nightly/firefox-nightly.desktop /tmp/nightly-build/firefox-nightly.desktop
 cd /tmp/nightly-build
 makepkg -s
 pkexec pacman -U /tmp/nightly-build/$(ls /tmp/nightly-build/| grep $(date +%Y%m%d) | grep .pkg) --noconfirm
